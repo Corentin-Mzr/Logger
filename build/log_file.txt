@@ -1,3 +1,6 @@
-[2025-01-11 20:43:55] This is std::cout 
-[2025-01-11 20:43:55] This is std::cerr 
-[2025-01-11 20:43:55] EXCEPTION CAUGHT: std::runtime_error - This error should be written in the log file
+[2025-01-11 21:53:12.331] This is std::cout 
+[2025-01-11 21:53:12.332] This is std::cerr 
+[2025-01-11 21:53:12.332] This is the log() function
+[2025-01-11 21:53:12.332] Calling some_function() that takes 1s to finish
+[2025-01-11 21:53:13.339] some_function() ended
+[2025-01-11 21:53:13.339] EXCEPTION CAUGHT: std::runtime_error - This error should be written in the log file

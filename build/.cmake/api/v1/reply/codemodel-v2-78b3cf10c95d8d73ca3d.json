@@ -27,7 +27,7 @@
 					[
 						0
 					],
-					"name" : "LogWriterProject",
+					"name" : "LoggerProject",
 					"targetIndexes" : 
 					[
 						0
@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "LogWriter::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LogWriter-Debug-9eaa57580c1aafbe0dbc.json",
-					"name" : "LogWriter",
+					"id" : "LoggerExample::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LoggerExample-Debug-1c1f6df29de883c9668a.json",
+					"name" : "LoggerExample",
 					"projectIndex" : 0
 				}
 			]

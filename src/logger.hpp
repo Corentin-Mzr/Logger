@@ -16,14 +16,23 @@
 #define __STDC_WANT_LIB_EXT1__ 1
 #endif
 
-class LogWriter : public std::streambuf {
+// Class used to log activity of the program in a file via standard character output (std::cout) and standard character error (std::cerr) streams 
+class Logger : public std::streambuf {
 public:
-    LogWriter(const std::string &filepath);
-    ~LogWriter();
+    Logger(const std::string &filepath);
+    ~Logger();
 
+    // Start logging in the file
     void start();
+
+    // Stop logging in the file
     void stop();
+
+    // Close the file    
     void close();
+
+    // Log a message
+    void log(const std::string &s);
 
 protected:
     virtual int overflow(int c) override;
@@ -35,6 +44,7 @@ private:
     std::ofstream file_stream;
     std::streambuf* cout_buffer = nullptr;
     std::streambuf* cerr_buffer = nullptr;
+    bool has_started = false;
 
     std::string get_current_datetime() const;
     std::string get_log_header() const;

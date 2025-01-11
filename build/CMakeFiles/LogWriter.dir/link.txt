@@ -1,3 +1,0 @@
-C:\Cmake\cmake-3.31.3-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\LogWriter.dir/objects.a
-C:\MinGW\mingw64\bin\ar.exe qc CMakeFiles\LogWriter.dir/objects.a @CMakeFiles\LogWriter.dir\objects1.rsp
-C:\MinGW\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\LogWriter.dir/objects.a -Wl,--no-whole-archive -o LogWriter.exe -Wl,--out-implib,libLogWriter.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\LogWriter.dir\linkLibs.rsp

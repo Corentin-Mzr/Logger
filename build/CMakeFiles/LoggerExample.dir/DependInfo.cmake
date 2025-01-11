@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/src/log_writter.cpp" "CMakeFiles/LogWriter.dir/src/log_writter.cpp.obj" "gcc" "CMakeFiles/LogWriter.dir/src/log_writter.cpp.obj.d"
-  "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/src/main.cpp" "CMakeFiles/LogWriter.dir/src/main.cpp.obj" "gcc" "CMakeFiles/LogWriter.dir/src/main.cpp.obj.d"
+  "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/src/logger.cpp" "CMakeFiles/LoggerExample.dir/src/logger.cpp.obj" "gcc" "CMakeFiles/LoggerExample.dir/src/logger.cpp.obj.d"
+  "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/src/main.cpp" "CMakeFiles/LoggerExample.dir/src/main.cpp.obj" "gcc" "CMakeFiles/LoggerExample.dir/src/main.cpp.obj.d"
+  "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/src/some_file.cpp" "CMakeFiles/LoggerExample.dir/src/some_file.cpp.obj" "gcc" "CMakeFiles/LoggerExample.dir/src/some_file.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

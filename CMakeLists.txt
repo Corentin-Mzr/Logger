@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 # Project name
-project(LogWriterProject)
+project(LoggerProject)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 20)
@@ -14,4 +14,4 @@ include_directories(src)
 file(GLOB SOURCES "src/*.cpp")
 
 # Create the executable
-add_executable(LogWriter ${SOURCES})
+add_executable(LoggerExample ${SOURCES})

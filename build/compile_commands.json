@@ -1,14 +1,20 @@
 [
 {
   "directory": "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/build",
-  "command": "C:\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/LogWriter.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\LogWriter.dir\\src\\log_writter.cpp.obj -c C:\\Users\\deads\\Bureau\\Jeux\\github\\cpp\\log_system\\src\\log_writter.cpp",
-  "file": "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/src/log_writter.cpp",
-  "output": "CMakeFiles/LogWriter.dir/src/log_writter.cpp.obj"
+  "command": "C:\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/LoggerExample.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\LoggerExample.dir\\src\\logger.cpp.obj -c C:\\Users\\deads\\Bureau\\Jeux\\github\\cpp\\log_system\\src\\logger.cpp",
+  "file": "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/src/logger.cpp",
+  "output": "CMakeFiles/LoggerExample.dir/src/logger.cpp.obj"
 },
 {
   "directory": "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/build",
-  "command": "C:\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/LogWriter.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\LogWriter.dir\\src\\main.cpp.obj -c C:\\Users\\deads\\Bureau\\Jeux\\github\\cpp\\log_system\\src\\main.cpp",
+  "command": "C:\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/LoggerExample.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\LoggerExample.dir\\src\\main.cpp.obj -c C:\\Users\\deads\\Bureau\\Jeux\\github\\cpp\\log_system\\src\\main.cpp",
   "file": "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/src/main.cpp",
-  "output": "CMakeFiles/LogWriter.dir/src/main.cpp.obj"
+  "output": "CMakeFiles/LoggerExample.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/build",
+  "command": "C:\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/LoggerExample.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\LoggerExample.dir\\src\\some_file.cpp.obj -c C:\\Users\\deads\\Bureau\\Jeux\\github\\cpp\\log_system\\src\\some_file.cpp",
+  "file": "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/src/some_file.cpp",
+  "output": "CMakeFiles/LoggerExample.dir/src/some_file.cpp.obj"
 }
 ]

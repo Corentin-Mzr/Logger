@@ -116,48 +116,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LogWriter
+# Target rules for targets named LoggerExample
 
 # Build rule for target.
-LogWriter: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 LogWriter
-.PHONY : LogWriter
+LoggerExample: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 LoggerExample
+.PHONY : LoggerExample
 
 # fast build rule for target.
-LogWriter/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LogWriter.dir\build.make CMakeFiles/LogWriter.dir/build
-.PHONY : LogWriter/fast
+LoggerExample/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LoggerExample.dir\build.make CMakeFiles/LoggerExample.dir/build
+.PHONY : LoggerExample/fast
 
-src/log_writter.obj: src/log_writter.cpp.obj
-.PHONY : src/log_writter.obj
+src/logger.obj: src/logger.cpp.obj
+.PHONY : src/logger.obj
 
 # target to build an object file
-src/log_writter.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LogWriter.dir\build.make CMakeFiles/LogWriter.dir/src/log_writter.cpp.obj
-.PHONY : src/log_writter.cpp.obj
+src/logger.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LoggerExample.dir\build.make CMakeFiles/LoggerExample.dir/src/logger.cpp.obj
+.PHONY : src/logger.cpp.obj
 
-src/log_writter.i: src/log_writter.cpp.i
-.PHONY : src/log_writter.i
+src/logger.i: src/logger.cpp.i
+.PHONY : src/logger.i
 
 # target to preprocess a source file
-src/log_writter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LogWriter.dir\build.make CMakeFiles/LogWriter.dir/src/log_writter.cpp.i
-.PHONY : src/log_writter.cpp.i
+src/logger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LoggerExample.dir\build.make CMakeFiles/LoggerExample.dir/src/logger.cpp.i
+.PHONY : src/logger.cpp.i
 
-src/log_writter.s: src/log_writter.cpp.s
-.PHONY : src/log_writter.s
+src/logger.s: src/logger.cpp.s
+.PHONY : src/logger.s
 
 # target to generate assembly for a file
-src/log_writter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LogWriter.dir\build.make CMakeFiles/LogWriter.dir/src/log_writter.cpp.s
-.PHONY : src/log_writter.cpp.s
+src/logger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LoggerExample.dir\build.make CMakeFiles/LoggerExample.dir/src/logger.cpp.s
+.PHONY : src/logger.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
 # target to build an object file
 src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LogWriter.dir\build.make CMakeFiles/LogWriter.dir/src/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LoggerExample.dir\build.make CMakeFiles/LoggerExample.dir/src/main.cpp.obj
 .PHONY : src/main.cpp.obj
 
 src/main.i: src/main.cpp.i
@@ -165,7 +165,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LogWriter.dir\build.make CMakeFiles/LogWriter.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LoggerExample.dir\build.make CMakeFiles/LoggerExample.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -173,8 +173,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LogWriter.dir\build.make CMakeFiles/LogWriter.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LoggerExample.dir\build.make CMakeFiles/LoggerExample.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/some_file.obj: src/some_file.cpp.obj
+.PHONY : src/some_file.obj
+
+# target to build an object file
+src/some_file.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LoggerExample.dir\build.make CMakeFiles/LoggerExample.dir/src/some_file.cpp.obj
+.PHONY : src/some_file.cpp.obj
+
+src/some_file.i: src/some_file.cpp.i
+.PHONY : src/some_file.i
+
+# target to preprocess a source file
+src/some_file.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LoggerExample.dir\build.make CMakeFiles/LoggerExample.dir/src/some_file.cpp.i
+.PHONY : src/some_file.cpp.i
+
+src/some_file.s: src/some_file.cpp.s
+.PHONY : src/some_file.s
+
+# target to generate assembly for a file
+src/some_file.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LoggerExample.dir\build.make CMakeFiles/LoggerExample.dir/src/some_file.cpp.s
+.PHONY : src/some_file.cpp.s
 
 # Help Target
 help:
@@ -184,13 +208,16 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... LogWriter
-	@echo ... src/log_writter.obj
-	@echo ... src/log_writter.i
-	@echo ... src/log_writter.s
+	@echo ... LoggerExample
+	@echo ... src/logger.obj
+	@echo ... src/logger.i
+	@echo ... src/logger.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/some_file.obj
+	@echo ... src/some_file.i
+	@echo ... src/some_file.s
 .PHONY : help
 
 

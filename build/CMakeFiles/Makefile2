@@ -62,11 +62,11 @@ CMAKE_BINARY_DIR = C:\Users\deads\Bureau\Jeux\github\cpp\log_system\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/LogWriter.dir/all
+all: CMakeFiles/LoggerExample.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/LogWriter.dir/codegen
+codegen: CMakeFiles/LoggerExample.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -74,40 +74,40 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/LogWriter.dir/clean
+clean: CMakeFiles/LoggerExample.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/LogWriter.dir
+# Target rules for target CMakeFiles/LoggerExample.dir
 
 # All Build rule for target.
-CMakeFiles/LogWriter.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LogWriter.dir\build.make CMakeFiles/LogWriter.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LogWriter.dir\build.make CMakeFiles/LogWriter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\deads\Bureau\Jeux\github\cpp\log_system\build\CMakeFiles --progress-num=1,2,3 "Built target LogWriter"
-.PHONY : CMakeFiles/LogWriter.dir/all
+CMakeFiles/LoggerExample.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LoggerExample.dir\build.make CMakeFiles/LoggerExample.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LoggerExample.dir\build.make CMakeFiles/LoggerExample.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\deads\Bureau\Jeux\github\cpp\log_system\build\CMakeFiles --progress-num=1,2,3,4 "Built target LoggerExample"
+.PHONY : CMakeFiles/LoggerExample.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/LogWriter.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\deads\Bureau\Jeux\github\cpp\log_system\build\CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/LogWriter.dir/all
+CMakeFiles/LoggerExample.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\deads\Bureau\Jeux\github\cpp\log_system\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/LoggerExample.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\deads\Bureau\Jeux\github\cpp\log_system\build\CMakeFiles 0
-.PHONY : CMakeFiles/LogWriter.dir/rule
+.PHONY : CMakeFiles/LoggerExample.dir/rule
 
 # Convenience name for target.
-LogWriter: CMakeFiles/LogWriter.dir/rule
-.PHONY : LogWriter
+LoggerExample: CMakeFiles/LoggerExample.dir/rule
+.PHONY : LoggerExample
 
 # codegen rule for target.
-CMakeFiles/LogWriter.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LogWriter.dir\build.make CMakeFiles/LogWriter.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\deads\Bureau\Jeux\github\cpp\log_system\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target LogWriter"
-.PHONY : CMakeFiles/LogWriter.dir/codegen
+CMakeFiles/LoggerExample.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LoggerExample.dir\build.make CMakeFiles/LoggerExample.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\deads\Bureau\Jeux\github\cpp\log_system\build\CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target LoggerExample"
+.PHONY : CMakeFiles/LoggerExample.dir/codegen
 
 # clean rule for target.
-CMakeFiles/LogWriter.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LogWriter.dir\build.make CMakeFiles/LogWriter.dir/clean
-.PHONY : CMakeFiles/LogWriter.dir/clean
+CMakeFiles/LoggerExample.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LoggerExample.dir\build.make CMakeFiles/LoggerExample.dir/clean
+.PHONY : CMakeFiles/LoggerExample.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
