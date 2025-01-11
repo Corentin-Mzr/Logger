@@ -1,3 +1,0 @@
-[2024-07-06 19:21:02] This is std::cout 
-[2024-07-06 19:21:02] This is std::cerr !
-[2024-07-06 19:21:02] EXCEPTION CAUGHT: std::runtime_error - This error should be written in the log file

@@ -48,23 +48,29 @@ void LogWriter::close()
         file_stream.close();
 }
 
-int LogWriter::overflow(int c) {
-        if (c == EOF) {
-            return !EOF;
-        } else {
-            int const result1 = file_stream.rdbuf()->sputc(c);
-            int const result2 = cout_buffer->sputc(c);
-            return result1 == EOF || result2 == EOF ? EOF : c;
-        }
+int LogWriter::overflow(int c)
+{
+    if (c == EOF)
+    {
+        return !EOF;
+    }
+    else
+    {
+        int const result1 = file_stream.rdbuf()->sputc(c);
+        int const result2 = cout_buffer->sputc(c);
+        return result1 == EOF || result2 == EOF ? EOF : c;
+    }
 }
 
-int LogWriter::sync() {
+int LogWriter::sync()
+{
     int const result1 = file_stream.rdbuf()->pubsync();
     int const result2 = cout_buffer->pubsync();
     return result1 == 0 && result2 == 0 ? 0 : -1;
 }
 
-std::streamsize LogWriter::xsputn(const char* s, std::streamsize n) {
+std::streamsize LogWriter::xsputn(const char *s, std::streamsize n)
+{
     std::string log_entry = get_log_header() + std::string(s, n);
     std::streamsize const r1 = file_stream.rdbuf()->sputn(log_entry.c_str(), log_entry.size());
     std::streamsize const r2 = cout_buffer->sputn(s, n);
@@ -75,31 +81,41 @@ std::string LogWriter::get_current_datetime() const
 {
     auto now = std::chrono::system_clock::now();
     auto in_time_t = std::chrono::system_clock::to_time_t(now);
+    std::tm time_info;
     std::stringstream ss;
 
-    ss << std::put_time(std::localtime(&in_time_t), "%Y-%m-%d %X");
+    if (localtime_s(&time_info, &in_time_t) != 0)
+        throw std::runtime_error("Failed to get local time");
 
+    ss << std::put_time(&time_info, "%Y-%m-%d %X");
     return ss.str();
 }
 
 std::string LogWriter::get_log_header() const
 {
     std::string header = "[" + get_current_datetime() + "] ";
-    return header; 
+    return header;
 }
 
-std::string LogWriter::demangle(const char* name)
+std::string LogWriter::demangle(const char *name)
 {
+#ifdef __GNUG__
     int status;
-    char* demangled_name = abi::__cxa_demangle(name, nullptr, nullptr, &status);
-    if (status == 0) {
+    char *demangled_name = abi::__cxa_demangle(name, nullptr, nullptr, &status);
+    if (status == 0)
+    {
         std::string demangled = demangled_name;
         std::free(demangled_name);
         return demangled;
-    } else {
+    }
+    else
+    {
         // Demangling failed, return the original name
         return name;
     }
+#else
+    return name;
+#endif
 }
 
 void LogWriter::handle_exception()
@@ -107,9 +123,12 @@ void LogWriter::handle_exception()
     std::exception_ptr exptr = std::current_exception();
     if (exptr != nullptr)
     {
-        try {
+        try
+        {
             std::rethrow_exception(exptr);
-        } catch (const std::exception& e) {
+        }
+        catch (const std::exception &e)
+        {
             std::string exception = "EXCEPTION CAUGHT: " + demangle(typeid(e).name()) + " - " + e.what() + "\n";
             std::cerr << exception;
         }

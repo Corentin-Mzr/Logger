@@ -8,7 +8,13 @@
 #include <iomanip>
 #include <sstream>
 
+#ifdef __GNUG__
 #include <cxxabi.h>
+#endif
+
+#ifndef __STDC_LIB_EXT1__
+#define __STDC_WANT_LIB_EXT1__ 1
+#endif
 
 class LogWriter : public std::streambuf {
 public:
