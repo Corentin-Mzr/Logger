@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/build",
+  "command": "C:\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/LogWriter.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\LogWriter.dir\\src\\log_writter.cpp.obj -c C:\\Users\\deads\\Bureau\\Jeux\\github\\cpp\\log_system\\src\\log_writter.cpp",
+  "file": "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/src/log_writter.cpp",
+  "output": "CMakeFiles/LogWriter.dir/src/log_writter.cpp.obj"
+},
+{
+  "directory": "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/build",
+  "command": "C:\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/LogWriter.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\LogWriter.dir\\src\\main.cpp.obj -c C:\\Users\\deads\\Bureau\\Jeux\\github\\cpp\\log_system\\src\\main.cpp",
+  "file": "C:/Users/deads/Bureau/Jeux/github/cpp/log_system/src/main.cpp",
+  "output": "CMakeFiles/LogWriter.dir/src/main.cpp.obj"
+}
+]
